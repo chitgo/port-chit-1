@@ -26,7 +26,7 @@ function Hero() {
             career in crafting sleek and functional websites that truly make an
             impact.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <a
               href="https://www.linkedin.com/in/konstantinos-chitos"
               target="_blank"
