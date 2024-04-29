@@ -9,7 +9,7 @@ import sassIcon from '../assets/sass-icon.svg'
 function Hero() {
   return (
     <section className="bg-[#B3C8CF]  py-24 border-t-2 border-t-[#B3C8CF] flex flex-col  items-center gap-12 text-center px-4 sm:px-8 md:px-12 lg:px-20 2xl:px-40 text-secondary">
-      <div className="flex flex-col items-center gap-8 md:justify-center md:flex-row-reverse md:text-left ">
+      <div className="flex flex-col items-center gap-8 md:justify-center md:flex-row-reverse md:text-left  ">
         <img
           src={devImg}
           alt="developer-image"
