@@ -7,31 +7,6 @@ import kofeeProject from '../assets/chit-kofee-screen.webp'
 import recipieProject from '../assets/recipie-finder-screen.webp'
 
 function Projects() {
-  const handleMouseMove = (e) => {
-    const image = e.target
-    const { left, top, width, height } = image.getBoundingClientRect()
-    const mouseX = e.clientX - left
-    const mouseY = e.clientY - top
-    const centerX = width / 2
-    const centerY = height / 2
-    const offsetX = (mouseX - centerX) / centerX
-    const offsetY = (mouseY - centerY) / centerY
-    const maxRotation = 30 // Maximum rotation angle in degrees
-
-    const rotateX = maxRotation * offsetY
-    const rotateY = -maxRotation * offsetX
-    const opacity = 0.9
-
-    image.style.transform = `perspective(1300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    image.style.opacity = opacity
-  }
-
-  const handleMouseLeave = (e) => {
-    const image = e.target
-    image.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)'
-    image.style.opacity = 1
-  }
-
   return (
     <section
       className='px-4 py-8 text-center sm:px-8 md:px-12 lg:px-20 2xl:px-40 text-secondary'
@@ -51,8 +26,6 @@ function Projects() {
                 src={blogProject}
                 alt='blog-project'
                 className='w-[90%] max-h-[400px] object-top object-cover rounded-xl cursor-pointer transition-transform duration-300'
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
               />
             </div>
 
@@ -101,8 +74,6 @@ function Projects() {
                 src={recipieProject}
                 alt='recipie-project'
                 className='w-[90%] max-h-[400px] object-top object-cover rounded-xl cursor-pointer'
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
               />
             </div>
             <div className='flex flex-col items-center order-last px-6 space-y-4 md:order-first'>
@@ -146,8 +117,6 @@ function Projects() {
                 src={ecomProject}
                 alt='ecom-project'
                 className='w-[90%] max-h-[400px] object-top object-cover rounded-xl cursor-pointer'
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
               />
             </div>
 
@@ -193,8 +162,6 @@ function Projects() {
                 src={cocktailsProject}
                 alt='cocktails-project'
                 className='w-[90%] max-h-[400px] object-top object-cover rounded-xl cursor-pointer'
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
               />
             </div>
 
@@ -242,8 +209,6 @@ function Projects() {
                 src={kofeeProject}
                 alt='kofee-project'
                 className='w-[90%] max-h-[400px] object-top object-cover rounded-xl cursor-pointer'
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
               />
             </div>
 
