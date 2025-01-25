@@ -3,8 +3,8 @@ import { useRef } from 'react'
 import blogProject from '../assets/chit-blog-screen.webp'
 import ecomProject from '../assets/chit-ecom-screen.webp'
 import cocktailsProject from '../assets/chit-cocktails-screen.webp'
-import kofeeProject from '../assets/chit-kofee-screen.webp'
 import recipieProject from '../assets/recipie-finder-screen.webp'
+import weatherProject from '../assets/weather-app-screen.webp'
 
 function Projects() {
   return (
@@ -42,7 +42,9 @@ function Projects() {
                 reading experience.
               </p>
 
-              <p className='w-full pb-2 capitalize border-b-2'>Project Info</p>
+              <p className='w-full pb-2 font-semibold capitalize border-b-2 '>
+                Project Info
+              </p>
               <p className='w-full pb-2 border-b-2'>
                 Technologies : React.js, TailwindCSS, Firebase
               </p>
@@ -86,7 +88,9 @@ function Projects() {
                 experience.
               </p>
 
-              <p className='w-full pb-2 capitalize border-b-2'>Project Info</p>
+              <p className='w-full pb-2 font-semibold capitalize border-b-2 '>
+                Project Info
+              </p>
               <p className='w-full pb-2 border-b-2'>
                 Technologies: React.js, TailwindCSS, Redux, Edamam Api
               </p>
@@ -130,7 +134,9 @@ function Projects() {
                 features.
               </p>
 
-              <p className='w-full pb-2 capitalize border-b-2'>Project Info</p>
+              <p className='w-full pb-2 font-semibold capitalize border-b-2'>
+                Project Info
+              </p>
               <p className='w-full pb-2 border-b-2'>
                 Technologies: React.js, TailwindCSS
               </p>
@@ -177,7 +183,9 @@ function Projects() {
                 learn more about its ingredients and preparation method.
               </p>
 
-              <p className='w-full pb-2 capitalize border-b-2'>Project Info</p>
+              <p className='w-full pb-2 font-semibold capitalize border-b-2 '>
+                Project Info
+              </p>
               <p className='w-full pb-2 border-b-2'>
                 Technologies: React.js, TailwindCSS, Cocktail API Integration
               </p>
@@ -206,38 +214,40 @@ function Projects() {
           <div className='grid items-center max-w-5xl grid-cols-1 gap-6 py-6 mx-auto md:grid-cols-2 rounded-xl'>
             <div className='flex justify-center'>
               <img
-                src={kofeeProject}
-                alt='kofee-project'
+                src={weatherProject}
+                alt='weather-project'
                 className='w-[90%] max-h-[400px] object-top object-cover rounded-xl cursor-pointer'
               />
             </div>
 
             <div className='flex flex-col items-center order-last px-6 space-y-4 '>
-              <h2 className='text-xl font-semibold'>Coffee Shop Website</h2>
+              <h2 className='text-xl font-semibold'>Weather App</h2>
               <p className='max-w-md'>
-                A visually appealing coffee shop website designed to showcase
-                the ambiance and menu of a fictional coffee shop. The website
-                features a clean and elegant design with high-quality photos of
-                the coffee shop's interior, exterior, and menu items. Users can
-                browse through the different sections of the website to explore
-                the menu offerings and view captivating images of the coffee
-                shop.
+                A sleek and interactive weather app that provides accurate
+                weather forecasts for any city. Users can view current
+                conditions, a 5-day forecast, and save favorite cities for quick
+                access. The app features an interactive map powered by Leaflet,
+                allowing users to explore weather data by clicking on any
+                location. Weather information is fetched in real-time using the
+                OpenWeather API, ensuring up-to-date forecasts.
               </p>
 
-              <p className='w-full pb-2 capitalize border-b-2'>Project Info</p>
+              <p className='w-full pb-2 font-semibold capitalize border-b-2'>
+                Project Info
+              </p>
               <p className='w-full pb-2 border-b-2'>
-                Technologies: React.js, TailwindCSS
+                Technologies: React.js, TailwindCSS, Leaflet, OpenWeather API
               </p>
               <div className='flex gap-4'>
                 <a
-                  href='https://chitgo.github.io/coff-chit-1/'
+                  href='https://chitgo.github.io/weather-app/'
                   target='_blank'
                   className='px-6 py-2 font-medium text-white transition duration-300 border rounded-md border-primary bg-primary hover:bg-white hover:border-primary hover:text-primary hover:text-blue hover:bg-transparent'
                 >
                   Live Demo
                 </a>
                 <a
-                  href='https://github.com/chitgo/coff-chit-1'
+                  href='https://github.com/chitgo/weather-app'
                   target='_blank'
                   className='px-6 py-2 font-medium transition duration-300 bg-transparent border rounded-md border-primary hover:bg-primary hover:border-primary text-primary hover:text-white'
                 >
