@@ -1,5 +1,5 @@
-import mailIcon from '../assets/mail-icon.svg'
-import mapIcon from '../assets/map-location.svg'
+import mailIcon from "../assets/mail-icon.svg";
+import mapIcon from "../assets/map-location.svg";
 
 function Contact() {
   return (
@@ -8,7 +8,11 @@ function Contact() {
       id="contact"
     >
       <h2 className="text-2xl font-bold text-primary">Contact</h2>
-      <h2 className="mt-6 text-3xl font-semibold">Don't be shy! Hit me up!</h2>
+      <h2 className="mt-6 text-3xl font-semibold">
+        Let’s connect!
+        <br />
+        I’m open to opportunities and collaborations.
+      </h2>
       <div className="flex flex-col items-center mt-8 ">
         <img
           src={mapIcon}
@@ -17,7 +21,7 @@ function Contact() {
         />
         <p className="font-bold text-[27px]">Location</p>
         <p className="text-[##767676] hover:text-primary cursor-pointer text-[27px] ">
-          Greece
+          Athens, Greece
         </p>
       </div>
       <div className="flex flex-col items-center mt-4">
@@ -35,6 +39,6 @@ function Contact() {
         </a>
       </div>
     </section>
-  )
+  );
 }
-export default Contact
+export default Contact;
